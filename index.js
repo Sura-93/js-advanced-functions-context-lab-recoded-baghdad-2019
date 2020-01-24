@@ -42,7 +42,7 @@ function createTimeInEvent(dateStamp) {
    let timeObj = {
         type: "TimeIn"
         , date: date[0]
-        , hour: parseInt(date[1]) 
+        , hour: parseInt(date[1])
     }
     this.timeInEvents.push(timeObj)
     return this
@@ -53,7 +53,7 @@ function createTimeOutEvent(dateStamp) {
    let timeObj = {
         type: "TimeOut"
         , date: date[0]
-        , hour: parseInt(date[1]) 
+        , hour: parseInt(date[1])
     }
     this.timeOutEvents.push(timeObj)
     return this
@@ -75,7 +75,7 @@ function createEmployeeRecords(arrayOfArray) {
     let arrayOfObj = []
     arrayOfObj=arrayOfArray.map(function (e) {
         return createEmployeeRecord(e)
-    }) 
+    })
     return arrayOfObj
 }
 
